@@ -41,6 +41,9 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 	Effect laserEffect2;
 	laserEffect2.Init(u"Assets/effect/laser2.efk");
 
+	NewGO< Background>(0);
+	NewGO<Hello2D>(0);
+	NewGO< HelloLevel2D>(0);
 	// ここからゲームループ。
 	while (DispatchWindowMessage())
 	{
